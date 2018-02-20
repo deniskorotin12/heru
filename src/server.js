@@ -34,10 +34,10 @@ sql.connect(data, function (err) {
         '${req.body.email}', 
         '${req.body.udid}'
         `, function (err, recordset) {
-
             if (err) console.log(err)
-
+            
         });
+        res.send(JSON.stringify(req.body))
     })
 
 
